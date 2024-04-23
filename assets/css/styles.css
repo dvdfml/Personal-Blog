@@ -1,0 +1,15 @@
+:root {
+    --border-color-light: black;
+}
+
+body>* {
+    border-bottom: solid var(--border-color-light);
+}
+
+#custom-form {
+    line-height: 2.5;
+}
+
+#custom-button img {
+    height: 20px;
+}
