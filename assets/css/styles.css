@@ -1,15 +1,47 @@
 :root {
+    --border-size: 6px;
+
+    /* light theme */
     --border-color-light: black;
+    --bg-color-light: white;
+    --text-color-light: black;
+
+    /* dark theme */
+    --border-color-dark: white;
+    --bg-color-dark: black;
+    --text-color-dark: white;
+
+    --test: red;
 }
 
-body>* {
-    border-bottom: solid var(--border-color-light);
+.light {
+    color: var(--text-color-light);
+    background-color: var(--bg-color-light);
 }
 
-#custom-form {
-    line-height: 2.5;
+.light header{
+    border-bottom: solid var(--border-color-light) var(--border-size);
 }
 
-#custom-button img {
-    height: 20px;
+.light main{
+    border-bottom: solid var(--border-color-light) var(--border-size);
+    border-top: solid var(--border-color-light) var(--border-size);
+}
+
+.light #img-section {
+    border-right: solid var(--border-color-light) var(--border-size);
+}
+
+.dark {
+    color: var(--text-color-dark);
+    background-color: var(--bg-color-dark);
+}
+
+.light header{
+    border-bottom: solid var(--border-color-light) var(--border-size);
+}
+
+.light main{
+    border-bottom: solid var(--border-color-light) var(--border-size);
+    border-top: solid var(--border-color-light) var(--border-size);
 }
