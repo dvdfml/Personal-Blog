@@ -5,14 +5,23 @@ const submitBtn = document.getElementById('fbtn');
 
 function submissionHandler(event) {
     event.preventDefault();
-    const newBlogPost = {
-        'username': username.value,
-        'title': title.value,
-        'content': content.value
-    };
-    let blogPosts = loadFromLocalStorage();
-    blogPosts.push(newBlogPost);
-    localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
+
+    if (username.value != '' & title.value != '' & content.value != ''){
+        
+        const newBlogPost = {
+            'username': username.value,
+            'title': title.value,
+            'content': content.value
+        };
+
+        let blogPosts = loadFromLocalStorage();
+        blogPosts.push(newBlogPost);
+        localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
+        
+        window.document.location = './blog.html';
+    } else {
+        alert('Please complete the form');
+    }
 }
 
 function loadFromLocalStorage() {
