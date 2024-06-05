@@ -28,16 +28,26 @@ button {
     border: solid 2px var(--border-color-light);
 }
 
-.dark .card {
-    border: solid 2px var(--border-color-dark);
-}
-
 .light .card h2 {
     border-bottom: solid 1px var(--border-color-light);
 }
 
+.light #back-btn {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+.dark .card {
+    border: solid 2px var(--border-color-dark);
+}
+
 .dark .card h2 {
     border-bottom: solid 1px var(--border-color-dark);
+}
+
+.dark #back-btn {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
 }
 
 #inner-header {
@@ -52,10 +62,5 @@ button {
 
 #back-btn {
     height: 30px;
-    width: 60px;
-}
-
-#back-btn a {
-    text-decoration: none;
-    color: black;
+    width: 70px;
 }

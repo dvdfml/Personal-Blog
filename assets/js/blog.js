@@ -1,7 +1,5 @@
 const main = document.body.children[1];
-
-
-
+const backBtn = document.getElementById('back-btn')
 
 function loadFromLocalStorage() {
     const blogPosts = JSON.parse(localStorage.getItem('blogPosts'));
@@ -34,3 +32,7 @@ function displayBlogPosts(blogPosts) {
 }
 
 displayBlogPosts(loadFromLocalStorage());
+
+backBtn.addEventListener('click', () => {
+    window.document.location = './index.html';
+})
