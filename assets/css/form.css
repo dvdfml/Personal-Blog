@@ -38,6 +38,10 @@ label{
     border-left: solid var(--border-color-dark) var(--border-size);
 }
 
+
+#theme-btn{
+    margin: 10px;
+}
 #img-section {
     width: 50%;
     margin: 0px 3px 0px 0px
